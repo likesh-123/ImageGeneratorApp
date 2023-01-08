@@ -1,11 +1,15 @@
 {
   "name": "image-generator",
+  "homepage": "https://likesh-123.github.io/ImageGeneratorApp/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index"
+    "dev": "nodemon index",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "author": "Likesh",
   "license": "ISC",
